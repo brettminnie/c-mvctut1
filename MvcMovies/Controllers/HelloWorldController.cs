@@ -11,17 +11,20 @@ namespace MvcMovies.Controllers
         //
         // GET: /HelloWorld/
 
-        public string Index()
+        public ActionResult Index()
         {
-            return "This is my default action";
+            return View();
         }
 
         // 
         // GET: /HelloWorld/Welcome/ 
 
-        public string Welcome()
+        public ActionResult Welcome(string name, int numTimes = 1)
         {
-            return "This is the Welcome action method...";
+            ViewBag.Message = "Hello " + name;
+            ViewBag.NumTimes = numTimes;
+
+            return View();
         } 
     }
 }
