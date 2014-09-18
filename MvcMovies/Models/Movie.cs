@@ -7,14 +7,14 @@ namespace MvcMovies.Models
 {
     public class Movie
     {
-        protected int Id { get; set; }
+        public int ID { get; set; }
 
-        protected string Title { get; set; }
+        public string Title { get; set; }
 
-        protected DateTime ReleaseDate { get; set; }
+        public DateTime ReleaseDate { get; set; }
 
-        protected string Genre { get; set; }
+        public string Genre { get; set; }
 
-        protected decimal Price { get; set; }
+        public decimal Price { get; set; }
     }
 }

@@ -8,6 +8,6 @@ namespace MvcMovies.Models
 {
     public class MovieDbContext : DbContext
     {
-        protected DbSet<Movie> Movies { get; set; }
+        public DbSet<Movie> Movies { get; set; }
     }
 }
